@@ -3,7 +3,7 @@ from rest_framework import viewsets
 from .serializers import UserSerializer
 
 
-class UsersViewSet(viewsets.ModelViewSet):
+class UsersViewSet(viewsets.ReadOnlyModelViewSet):
     """
     return all programs' information
     """

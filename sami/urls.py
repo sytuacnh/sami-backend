@@ -38,7 +38,7 @@ urlpatterns = [
     path('api/', include(router.urls)),
 
     # login URLs for the browsable API. able to login 
-    path('api-auth/', include('rest_framework.urls', namespace='rest_framework')),
+    path('api-login/', include('rest_framework.urls', namespace='rest_framework')),
     # api doc
     path('docs/', include_docs_urls(title="SAMI")),
 ]
