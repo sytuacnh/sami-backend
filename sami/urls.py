@@ -20,6 +20,7 @@ from rest_framework.routers import DefaultRouter
 
 from programs.views import ProgramsViewSet
 from users.views import UsersViewSet
+from contactmessages.views import ContactMessagesViewSet
 
 # xadmin
 import xadmin
@@ -31,6 +32,7 @@ router = DefaultRouter()
 
 # /api/programs -> ProgramsViewSet
 router.register(r'programs', ProgramsViewSet) # doesn't need to add base_name="programs"
+router.register(r'contactmessages', ContactMessagesViewSet)
 router.register(r'users', UsersViewSet)
 
 urlpatterns = [

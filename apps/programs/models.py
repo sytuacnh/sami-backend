@@ -18,7 +18,7 @@ class ProgramInfo(models.Model):
     # location = models.CharField(max_length=100, default="", verbose_name="program_location")
     location = models.TextField(default="", verbose_name="program_location")
     is_completed = models.BooleanField(default=False, null=False, blank=False, verbose_name="program_is_completed", help_text="whether the program is completed")
-    is_ongoing = models.BooleanField(default=False, null=False, blank=False, verbose_name="program_is_completed", help_text="whether the program is completed")
+    # is_ongoing = models.BooleanField(default=False, null=False, blank=False, verbose_name="program_is_completed", help_text="whether the program is completed")
     # staff 
     
 

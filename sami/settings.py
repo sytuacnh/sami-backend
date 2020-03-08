@@ -44,10 +44,11 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     # drf
     'rest_framework',
-    # for frontend?
+    # for frontend commmunication
     'corsheaders',
     # apps
     'programs',
+    'contactmessages',
     'users',
     # xadmin
     'xadmin',
@@ -70,7 +71,6 @@ MIDDLEWARE = [
 
 CORS_ALLOW_CREDENTIALS = True
 # CORS_ORIGIN_ALLOW_ALL = True
-
 # whitelist localhost:2000 because that's where frontend will be served
 CORS_ORIGIN_WHITELIST = [
     'http://localhost:2000'
@@ -163,3 +163,12 @@ STATICFILES_DIRS = (
 # XADMIN_CONF = 'sami.xsite'  # failed
 #XADMIN_EXCLUDE_PLUGINS = ('bookmark', 'comments')
 # import xsite
+
+
+# send email
+EMAIL_USE_TLS = True
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_HOST_USER = os.environ['SAMI_GMAIL_ACCOUNT']
+EMAIL_HOST_PASSWORD = os.environ['SAMI_GMAIL_PASSWORD']
+SEND_TO_EMAILS = [os.environ['TEST_GMAIL_ACCOUNT']]

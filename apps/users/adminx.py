@@ -3,7 +3,7 @@ import xadmin
 from .models import UserProfile # add this
 from programs.models import ProgramInfo
 class UsersAdminSetting():
-    list_display = ['first_name', 'last_name', 'email', 'mobile', "gender"]
+    list_display = ['first_name', 'last_name', 'email', 'mobile']
     search_fields = ['first_name','last_name']
     list_filter = ['id', 'add_time', 'last_name']
 
