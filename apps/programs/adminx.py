@@ -19,4 +19,5 @@ class ProgramsAdminSetting():
     # a lot more fields
     # https://github.com/sshwsfc/xadmin-demo/blob/6f321f2688fc4f7737a39cda07a807bdb2f1561a/host/adminx.py
 
-xadmin.site.register(ProgramInfo, ProgramsAdminSetting)
+# does not include program app now
+# xadmin.site.register(ProgramInfo, ProgramsAdminSetting)
