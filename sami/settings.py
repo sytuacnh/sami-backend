@@ -169,7 +169,7 @@ USE_TZ = True
 # use nginx to server static files in production
 STATIC_ROOT = "/var/www/sami-backend/static"
 
-STATIC_URL = "/static/"
+STATIC_URL = "/xstatic/"
 
 # STATICFILES_DIRS = (
 #     os.path.join(BASE_DIR, 'static'),
