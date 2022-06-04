@@ -91,3 +91,6 @@ db.sqlite3
 
 # static files
 static/
+
+# config for gunicorn
+config/
