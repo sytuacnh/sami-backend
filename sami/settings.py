@@ -27,9 +27,9 @@ sys.path.insert(0, os.path.join(BASE_DIR, 'extra_apps'))
 SECRET_KEY = os.environ.get('SAMI_SECRET_KEY', '')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ['104.198.233.196']
+ALLOWED_HOSTS = ['104.198.233.196', 'mathinclude.org']
 
 AUTH_USER_MODEL = 'users.UserProfile'
 
@@ -161,6 +161,9 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, "static"),
 )
+
+STATIC_ROOT = '/var/www/sami-backend/static'
+
 
 # global XAdmin setting
 # XADMIN_CONF = 'sami.xsite'  # failed
