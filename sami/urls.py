@@ -23,9 +23,9 @@ from users.views import UsersViewSet
 from contactmessages.views import ContactMessagesViewSet
 
 # for static
-from django.conf import settings
-from django.conf.urls.static import static
-# from django.contrib.staticfiles.urls import staticfiles_urlpatterns
+# from django.conf import settings
+# from django.conf.urls.static import static
+from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 
 
 # xadmin
@@ -49,7 +49,7 @@ urlpatterns = [
     path('api-login/', include('rest_framework.urls', namespace='rest_framework')),
     # api doc
     path('docs/', include_docs_urls(title="SAMI")),
-]
+# ]
 # following not for production
 # ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
-# ] + staticfiles_urlpatterns()
+] + staticfiles_urlpatterns()
