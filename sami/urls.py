@@ -23,8 +23,10 @@ from users.views import UsersViewSet
 from contactmessages.views import ContactMessagesViewSet
 
 # for static
-from django.conf import settings
-from django.conf.urls.static import static
+# from django.conf import settings
+# from django.conf.urls.static import static
+from django.contrib.staticfiles.urls import staticfiles_urlpatterns
+
 
 # xadmin
 import xadmin
@@ -48,4 +50,4 @@ urlpatterns = [
     # api doc
     path('docs/', include_docs_urls(title="SAMI")),
 # ]
-] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+] + staticfiles_urlpatterns()
