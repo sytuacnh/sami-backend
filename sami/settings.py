@@ -158,11 +158,13 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-STATICFILES_DIRS = (
-    os.path.join(BASE_DIR, "static"),
-)
+STATIC_ROOT = os.path.join(BASE_DIR, "static") 
 
-STATIC_ROOT = '/var/www/sami-backend/static'
+# STATICFILES_DIRS = (
+#     os.path.join(BASE_DIR, "static"),
+# )
+
+# STATIC_ROOT = '/var/www/sami-backend/static'
 
 
 # global XAdmin setting
