@@ -26,7 +26,7 @@ MarkupSafe==1.1.1
 mysqlclient==1.4.2.post1
 odfpy==1.4.0
 openpyxl==2.6.2
-Pillow==6.0.0
+Pillow==9.0.0
 Pygments==2.4.2
 pytz==2019.1
 PyYAML==5.1.1
@@ -36,6 +36,6 @@ sqlparse==0.3.0
 tablib==0.13.0
 uritemplate==3.0.0
 urllib3==1.25.3
-xadmin==2.0.1
+xadmin2==2.0.1
 xlrd==1.2.0
 xlwt==1.3.0
