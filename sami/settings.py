@@ -29,7 +29,7 @@ SECRET_KEY = os.environ.get('SAMI_SECRET_KEY', '')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['104.198.233.196', 'mathinclude.org']
 
 AUTH_USER_MODEL = 'users.UserProfile'
 
