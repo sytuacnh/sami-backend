@@ -29,7 +29,7 @@ SECRET_KEY = os.environ.get('SAMI_SECRET_KEY', '')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['127.0.0.1', '104.198.233.196', '.mathinclude.org']
+ALLOWED_HOSTS = ['127.0.0.1', '.mathinclude.org']
 
 AUTH_USER_MODEL = 'users.UserProfile'
 
@@ -161,14 +161,21 @@ USE_TZ = True
 # == STATIC_ROOT = 'static'
 
 # STATIC_ROOT = '/var/www/sami-backend/static/' # another option
-STATIC_ROOT = 'static'
+# use static3 to server in production
+# STATIC_ROOT = 'static'
 
-STATIC_URL = '/static/'
+# STATIC_URL = '/static/'
+
+# use nginx to server static files in production
+STATIC_ROOT = "/var/www/sami-backend/static"
+
+STATIC_URL = "/static/"
+
+STATICFILES_DIRS = [BASE_DIR / "static"]
 
 # STATICFILES_DIRS = (
 #     os.path.join(BASE_DIR, 'static'),
 # )
-
 
 
 # global XAdmin setting

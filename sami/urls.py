@@ -50,6 +50,3 @@ urlpatterns = [
     # api doc
     path('docs/', include_docs_urls(title="SAMI")),
 ]
-# following not for production
-# ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
-# ] + staticfiles_urlpatterns()
