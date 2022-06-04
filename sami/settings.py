@@ -156,8 +156,12 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
-STATIC_ROOT = os.path.join(BASE_DIR, "static") 
-# STATIC_ROOT = ''
+# STATIC_ROOT = os.path.join(BASE_DIR, "static")  
+# use django project folder's static to store static files
+# == STATIC_ROOT = 'static'
+
+# STATIC_ROOT = '/var/www/sami-backend/static/' # another option
+STATIC_ROOT = 'static'
 
 STATIC_URL = '/static/'
 
@@ -165,7 +169,6 @@ STATIC_URL = '/static/'
 #     os.path.join(BASE_DIR, 'static'),
 # )
 
-# STATIC_ROOT = '/var/www/sami-backend/static/'
 
 
 # global XAdmin setting
