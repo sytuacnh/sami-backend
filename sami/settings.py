@@ -58,6 +58,7 @@ INSTALLED_APPS = [
 ]
 
 MIDDLEWARE = [
+    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -65,8 +66,6 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    # for cross domain
-    'corsheaders.middleware.CorsMiddleware',
 ]
 
 CORS_ALLOW_CREDENTIALS = True
@@ -74,7 +73,8 @@ CORS_ALLOW_CREDENTIALS = True
 # whitelist localhost:2000 because that's where frontend will be served
 CORS_ORIGIN_WHITELIST = [
     'http://localhost:2000',
-    '.mathinclude.org'
+    '.mathinclude.org',
+    '0.0.0.0'
 ]
 
 ROOT_URLCONF = 'sami.urls'
