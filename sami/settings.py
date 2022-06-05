@@ -74,7 +74,6 @@ CORS_ALLOW_CREDENTIALS = True
 CORS_ORIGIN_WHITELIST = [
     'http://localhost:2000',
     '.mathinclude.org',
-    '0.0.0.0'
 ]
 
 ROOT_URLCONF = 'sami.urls'
