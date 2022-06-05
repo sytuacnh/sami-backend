@@ -73,7 +73,8 @@ CORS_ALLOW_CREDENTIALS = True
 # whitelist localhost:2000 because that's where frontend will be served
 CORS_ORIGIN_WHITELIST = [
     'http://localhost:2000',
-    '.mathinclude.org',
+    'https://mathinclude.org',
+    'https://www.mathinclude.org',
 ]
 
 ROOT_URLCONF = 'sami.urls'
