@@ -1,3 +1,3 @@
 # San Antonio Math Include - backend
 
-Django Rest Framework + XAdmin + MySQL
+Django Rest Framework + Gunicorn + XAdmin + MySQL
