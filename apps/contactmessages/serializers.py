@@ -18,7 +18,7 @@ class ContactMessageSerializer(serializers.ModelSerializer):
         
         send_mail(
             subject='{} Sent a Message from SaMi Website'.format(sender_name),
-            message='[{0}] with email [{1}] said: \n\n{1}'.format(sender_name, email, content),
+            message='[{0}] with email [{1}] said: \n\n{2}'.format(sender_name, email, content),
             recipient_list=SEND_TO_EMAILS,
             from_email=email,
             fail_silently=False,
